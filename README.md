@@ -247,6 +247,7 @@ require('wlsample.evil_line')
 #### indent-blankline
 显示缩进线，与 tree-sitter 配合使用
 #### orgmode
+不经常使用，配置文件 edit/init-orgmode.lua
 #### ranger
 ##### 未安装
 安装试过，也可以使用(https://blog.csdn.net/lxyoucan/article/details/116486176)
@@ -364,13 +365,13 @@ gcc: 注释一行
 1、sudo snap install nvim
 2、图标乱码，安装字体
 ```shell
-	将字体文件传到目录内，
-	sudo mkdir -p /usr/share/fonts/custom
-	sudo mv Monaco.ttf /usr/share/fonts/custom
-	sudo chmod 744 /usr/share/fonts/custom/name.ttf
-	以下操作在 /usr/share/fonts/custom/
-	sudo mkfontscale  -- 生成核心字体信息
-	sudo mkfontdir
-	sudo fc-cache -fv
+将字体文件传到目录内，
+sudo mkdir -p /usr/share/fonts/custom
+sudo mv Monaco.ttf /usr/share/fonts/custom
+sudo chmod 744 /usr/share/fonts/custom/name.ttf
+以下操作在 /usr/share/fonts/custom/
+sudo mkfontscale  -- 生成核心字体信息
+sudo mkfontdir
+sudo fc-cache -fv
 ```
 
