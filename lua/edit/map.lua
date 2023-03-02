@@ -7,6 +7,7 @@ map("n", "<C-h>", "<C-w>h", opts)
 map("n", "<C-j>", "<C-w>j", opts)
 map("n", "<C-k>", "<C-w>k", opts)
 map("n", "<C-l>", "<C-w>l", opts)
+vim.keymap.set('n', 'bn', "<cmd>bprevious<CR>", opts)
 
 -- tree
 local tree = require('nvim-tree')
@@ -21,7 +22,7 @@ vim.keymap.set("n", "rt", "<cmd>RnvimrToggle<CR>", opts)
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', 'ff', builtin.find_files, {}) -- 根据文件名
 vim.keymap.set('n', 'fg', builtin.live_grep, {}) -- 根据文件内容
-vim.keymap.set('n', 'bb', builtin.buffers, {}) -- 显示缓冲区
+vim.keymap.set('n', 'fb', builtin.buffers, {}) -- 显示缓冲区
 vim.keymap.set('n', 'fh', builtin.help_tags, {})
 
 -- lspsaga
