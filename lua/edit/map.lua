@@ -7,6 +7,10 @@ map("n", "<C-h>", "<C-w>h", opts)
 map("n", "<C-j>", "<C-w>j", opts)
 map("n", "<C-k>", "<C-w>k", opts)
 map("n", "<C-l>", "<C-w>l", opts)
+-- flod
+map("n", "z{", "zfi{", opts)
+
+
 vim.keymap.set('n', 'bn', "<cmd>bprevious<CR>", opts)
 
 -- tree
