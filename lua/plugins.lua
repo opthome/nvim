@@ -50,7 +50,8 @@ return require('packer').startup(function(use)
   use { 'simrat39/symbols-outline.nvim' } 
   -- code comment
   use { 'numToStr/Comment.nvim', config = function() require('Comment').setup() end}
-
+  -- format
+  use { 'mhartington/formatter.nvim' }
 
   -- autopairs
   use { 'windwp/nvim-autopairs', config = function() require("nvim-autopairs").setup {} end}

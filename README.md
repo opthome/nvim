@@ -360,7 +360,17 @@ gcc: 注释一行
 	3、在init-lsp.lua 中配置server('lua_ls')
 	4、其他配置写到 coding/lua.lua
 	5、lua.lua添加到init-lsp.lua
-
+#### format
+(https://github.com/mhartington/formatter.nvim)
+基本插件：use { 'mhartington/formatter.nvim' }
+##### lua:
+	1、:Mason install stylua
+	2、默认自带lua文件的配置，无需额外配置
+	2、即可使用 :Format stylua
+##### C:
+	1、brew install clang-format
+	2、将配置添加到 edit/init-format.lua
+	3、:Format clang-format
 # Ubuntu安装
 1、sudo snap install nvim
 2、图标乱码，安装字体

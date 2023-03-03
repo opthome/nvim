@@ -17,6 +17,8 @@ vim.keymap.set("n", "tf", "<cmd>NvimTreeFindFile<CR>", opts)
 -- ranger
 vim.keymap.set("n", "rt", "<cmd>RnvimrToggle<CR>", opts)
 
+-- format
+vim.keymap.set("n", "fm", "<cmd>Format clang-format<CR>", opts)
 
 -- telescope
 local builtin = require('telescope.builtin')
