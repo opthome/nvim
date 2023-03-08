@@ -15,7 +15,25 @@ return require('packer').startup(function(use)
   -- Statusline
   use { 'windwp/windline.nvim', config = function() require('wlsample.evil_line') end}
   -- startup
-  use { 'glepnir/dashboard-nvim', event = 'VimEnter',config = function() require('dashboard').setup{} end, requires = {'nvim-tree/nvim-web-devicons'} }
+  use { 'glepnir/dashboard-nvim', event = 'VimEnter',config = function() require('dashboard').setup{
+    theme = 'hyper',
+    config = {
+      week_header = {
+       enable = true,
+      },
+      shortcut = {
+        { desc = ' Update', group = '@property', action = 'Lazy update', key = 'u' },
+        {
+          icon = ' ',
+          icon_hl = '@variable',
+          desc = 'Files',
+          group = 'Label',
+          action = 'Telescope find_files',
+          key = 'f',
+        },
+      },
+    },
+  } end, requires = {'nvim-tree/nvim-web-devicons'} }
   -- floatterm
   use {"akinsho/toggleterm.nvim", tag = '*', config = function() require("toggleterm").setup() end}
   -- ranger

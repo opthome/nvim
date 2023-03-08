@@ -8,4 +8,3 @@ require('appearance.init-bufferline')
 require('appearance.init-tree-sitter')
 
 
-
